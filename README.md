@@ -1,251 +1,74 @@
-# Diabetes Prediction using Machine Learning
+# Healthcare AI Portfolio
 
-> An end-to-end healthcare machine learning project for predicting diabetes using clinical data, featuring data preprocessing, machine learning pipelines, hyperparameter tuning, ROC-AUC analysis, and model explainability with SHAP.
+Welcome to my **Healthcare AI Portfolio**.
 
----
+This repository documents my journey toward becoming a **Healthcare AI & Biomedical Data Scientist** through hands-on projects focused on machine learning, clinical data analysis, explainable AI, medical imaging, and multi-omics.
 
-## Project Overview
-
-Diabetes is one of the most prevalent chronic diseases worldwide and early diagnosis is essential for preventing long-term complications such as cardiovascular disease, kidney failure, neuropathy, and vision loss.
-
-The objective of this project is to develop and compare multiple machine learning models capable of predicting whether a patient has diabetes based on routinely collected clinical measurements.
-
-This project demonstrates a complete machine learning workflow, from data exploration and preprocessing to model evaluation and explainable AI.
+Each project is designed not only to build predictive models but also to understand the underlying clinical problem, interpret model decisions, and develop skills that are directly applicable to healthcare research and industry.
 
 ---
 
-## Objectives
+# Portfolio Roadmap
 
-- Understand the clinical problem of diabetes prediction.
-- Perform exploratory data analysis (EDA).
-- Identify and handle missing values.
-- Build reproducible preprocessing pipelines.
-- Train and evaluate multiple machine learning models.
-- Perform hyperparameter tuning using GridSearchCV.
-- Compare model performance using multiple evaluation metrics.
-- Evaluate models using ROC-AUC.
-- Explain model predictions using SHAP.
-
----
-
-## Dataset
-
-**Dataset:** Pima Indians Diabetes Dataset
-
-The dataset contains clinical measurements collected from female patients of Pima Indian heritage.
-
-### Features
-
-- Pregnancies
-- Glucose
-- Blood Pressure
-- Skin Thickness
-- Insulin
-- BMI
-- Diabetes Pedigree Function
-- Age
-
-### Target
-
-- **0** → No Diabetes
-- **1** → Diabetes
-
----
-
-# Clinical Background
-
-Diabetes mellitus is a chronic metabolic disorder characterized by elevated blood glucose levels resulting from impaired insulin production, insulin resistance, or both.
-
-Early prediction enables timely intervention and can significantly reduce the risk of long-term complications.
-
-Machine learning provides an opportunity to support clinicians by identifying high-risk patients using routinely collected clinical information.
-
----
-
-# Project Workflow
-
-```
-Clinical Background
-        │
-        ▼
-Data Exploration
-        │
-        ▼
-Missing Value Handling
-        │
-        ▼
-Train-Test Split
-        │
-        ▼
-Machine Learning Pipelines
-        │
-        ▼
-Model Training
-        │
-        ▼
-Hyperparameter Tuning
-        │
-        ▼
-Model Evaluation
-        │
-        ▼
-ROC-AUC Analysis
-        │
-        ▼
-SHAP Explainability
-```
-
----
-
-# Machine Learning Models
-
-The following classification algorithms were implemented and compared:
-
-- Logistic Regression
-- K-Nearest Neighbors (KNN)
-- Support Vector Machine (SVM)
-
----
-
-# Data Preprocessing
-
-The following preprocessing techniques were applied:
-
-- Exploratory Data Analysis (EDA)
-- Missing value identification
-- Median imputation using `SimpleImputer`
-- Feature scaling using `StandardScaler`
-- Train-test split with stratification
-- Machine learning pipelines using Scikit-learn
-
----
-
-# Model Evaluation
-
-Models were evaluated using:
-
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Confusion Matrix
-- ROC Curve
-- Area Under the Curve (AUC)
-
----
-
-# Hyperparameter Tuning
-
-Hyperparameter optimization was performed using:
-
-- GridSearchCV
-- 5-Fold Cross Validation
-
-This project demonstrates how hyperparameter tuning can improve model selection while highlighting that better cross-validation performance does not always guarantee improved performance on unseen test data.
-
----
-
-# Explainable AI (SHAP)
-
-Model predictions were interpreted using SHAP (SHapley Additive exPlanations).
-
-The project includes:
-
-- Global Feature Importance
-- SHAP Summary Plot
-- Local Patient-Level Explanation
-- SHAP Waterfall Plot
-
-These techniques improve model transparency and support trustworthy AI for healthcare applications.
+| Project | Status | Topics |
+|---------|:------:|--------|
+| Heart Disease Prediction | Completed | Data Preprocessing, Decision Trees, Random Forest, Feature Importance |
+| Diabetes Prediction | Completed | Pipelines, Hyperparameter Tuning, ROC-AUC, SHAP |
+| Breast Cancer Diagnosis | In Progress | Feature Selection, Learning Curves, Explainable AI |
+| ECG Classification | Planned | Deep Learning, CNNs, Time-Series Analysis |
+| Medical Imaging | Planned | Transfer Learning, CNNs, Medical Image Classification |
+| Multi-Omics Analysis | Planned | PCA, Clustering, Dimensionality Reduction |
+| LLMs in Healthcare | Planned | Clinical NLP, Retrieval-Augmented Generation (RAG), Medical Chatbots |
 
 ---
 
 # Repository Structure
 
-```
-02-Diabetes-Prediction
+```text
+Healthcare-AI-Portfolio/
 │
-├── data/
-│
-├── notebooks/
-│   └── Diabetes_Prediction.ipynb
-│
-├── figures/
-│
-├── README.md
-│
-└── requirements.txt
+├── 01-Heart-Disease-Prediction/
+├── 02-Diabetes-Prediction/
+├── 03-Breast-Cancer-Diagnosis/
+├── 04-ECG-Classification/
+├── 05-Medical-Imaging/
+├── 06-Multi-Omics/
+└── 07-LLMs-in-Healthcare/
 ```
 
 ---
 
-# Technologies Used
+# Skills Demonstrated
 
 - Python
+- Machine Learning
+- Data Preprocessing
+- Exploratory Data Analysis (EDA)
+- Model Evaluation
+- Hyperparameter Tuning
+- Explainable AI (SHAP)
+- Clinical Data Analysis
+- Healthcare Machine Learning
+- Scikit-learn
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
-- Scikit-learn
-- SHAP
-- Jupyter Notebook
 
 ---
 
-# Machine Learning Concepts Covered
+# Goal
 
-This project demonstrates practical implementation of:
+The objective of this portfolio is to build a strong foundation in Healthcare AI by progressively working on increasingly complex projects spanning:
 
-- Exploratory Data Analysis (EDA)
-- Missing Value Imputation
-- Feature Scaling
-- Train-Test Split
-- Data Leakage Prevention
-- Machine Learning Pipelines
-- Logistic Regression
-- K-Nearest Neighbors (KNN)
-- Support Vector Machine (SVM)
-- Hyperparameter Tuning
-- GridSearchCV
-- Cross Validation
-- ROC Curve
-- AUC
-- SHAP Explainability
+- Clinical tabular data
+- Medical imaging
+- Time-series analysis (ECG)
+- Multi-omics data
+- Large Language Models (LLMs)
+
+Each project emphasizes both the technical implementation and the clinical interpretation of results.
 
 ---
 
-# Key Learning Outcomes
-
-Through this project I learned how to:
-
-- Build reproducible machine learning pipelines.
-- Prevent data leakage during preprocessing.
-- Compare multiple classification algorithms.
-- Tune hyperparameters using cross-validation.
-- Evaluate models using multiple performance metrics.
-- Interpret machine learning predictions using Explainable AI (SHAP).
-- Communicate machine learning results in a healthcare context.
-
----
-
-# Future Improvements
-
-Potential extensions include:
-
-- Random Forest and Gradient Boosting models.
-- XGBoost and LightGBM.
-- Feature Selection techniques.
-- Probability Calibration.
-- Threshold Optimization.
-- Deep Learning models.
-- External validation on independent clinical datasets.
-
----
-
-# Author
-
-**Kanubha Sharma**
-
-MSc Medical Informatics | Biomedical AI | Healthcare Data Science
-
-This project is part of my **Healthcare AI Portfolio**, documenting my journey toward developing interpretable and clinically relevant AI solutions for healthcare.
+Thank you for visiting my portfolio!
