@@ -16,8 +16,8 @@ Each project is designed not only to build predictive models but also to underst
 |---------|:------:|----------------|
 | Heart Disease Prediction | Completed | EDA, Decision Trees, Random Forest, Feature Importance |
 | Diabetes Prediction | Completed | Pipelines, GridSearchCV, ROC-AUC, SHAP |
-| Breast Cancer Diagnosis | In Progress | Feature Selection, Learning Curves, Explainable AI |
-| ECG Classification | Planned | Neural Networks, CNNs, LSTMs, Time-Series Analysis |
+| Breast Cancer Diagnosis | Completed | Feature Selection, Learning Curves, Explainable AI |
+| ECG Classification | In progress | Neural Networks, CNNs, LSTMs, Time-Series Analysis |
 | Medical Imaging | Planned | Transfer Learning, CNNs, Grad-CAM |
 | Genomics Risk Prediction | Planned | PLINK, GWAS, PCA, Polygenic Risk Scores |
 | Healthcare ETL Pipeline | Planned | ETL Pipelines, SQL, Data Validation |
